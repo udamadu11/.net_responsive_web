@@ -93,6 +93,19 @@
                 </div>
             </div>
         </div>
+        <hr />
+        <!-- Footer -->
+            <footer class="page-footer font-small dark">
+
+              <!-- Copyright -->
+              <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="#">Techmart.com</a>
+              </div>
+              <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+                    </footer>
     </form>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
