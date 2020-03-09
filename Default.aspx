@@ -15,7 +15,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="Default.aspx"><span><img alt="Logo" src="Images/png.jpg" height="40" /></span></a>
+            <a class="navbar-brand" href="Default.aspx"><span><img alt="Logo" src="Images/png.jpg" height="40" /></span>TechMart</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,14 +25,19 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Computers</a>
+                      <a class="dropdown-item" href="#">Mobiles</a>
+                      <a class="dropdown-item" href="#">Accessories</a>
+                    </div>
+                  </li>
                 </ul>
            </div>
         </div>
