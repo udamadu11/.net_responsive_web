@@ -37,13 +37,6 @@
                     </div>
                   </li>
                 </ul>
-                <div>
-                <ul class="navbar-nav" style="float:right;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="SignUp.aspx">SignUp</a>
-                    </li>
-                </ul>
-            </div>
            </div>
             
         </div>
@@ -52,36 +45,39 @@
             <div class="alert alert-primary" role="alert">
              <center>SIGN UP FORM</center>
             </div>
+            <center><asp:Label ID="Label1" runat="server" Width="400px"></asp:Label></center>
+ 
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label>First Name</label>
-                  <input type="text" class="form-control" id="fname" />
+                  <asp:TextBox class="form-control" ID="fname" runat="server"></asp:TextBox>
                 </div>
                 <div class="form-group col-md-6">
                   <label>Last Name</label>
-                  <input type="text" class="form-control" id="lname" />
+                  <asp:TextBox class="form-control" ID="lname" runat="server"></asp:TextBox>
                 </div>
               </div>
               <div class="form-group">
                 <label>Address</label>
-                <input type="text" class="form-control" id="address" placeholder="1234 Main St" />
+                <asp:TextBox class="form-control" ID ="address" runat="server"></asp:TextBox>
               </div>
               <div class="form-group">
                 <label>Email</label>
-                <input type="text" class="form-control" id="email" placeholder="abc@gmail.com" />
+                <asp:TextBox class="form-control" ID="email"  runat="server" TextMode="Email"></asp:TextBox>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label>Password</label>
-                  <input type="password" class="form-control" id="pass1" />
+                  <asp:TextBox class="form-control" ID="pass1" runat="server" TextMode="Password"></asp:TextBox>
                 </div>
                 <div class="form-group col-md-6">
                   <label>Confirm Password</label>
-                  <input type="password" class="form-control" id="pass2" />
+                  <asp:TextBox class="form-control" ID="pass2" runat="server" TextMode="Password"></asp:TextBox>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg btn-block">Sign Up</button>
+              <asp:Button ID="signUp" class="btn btn-primary btn-lg btn-block" runat="server" Text="Sign Up" OnClick="signup_Click" />           
         </div>
+
         <!-- Footer -->
             <footer class="page-footer font-small dark">
                 <div class="footer-pos">
