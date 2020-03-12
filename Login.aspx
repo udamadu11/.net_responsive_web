@@ -45,17 +45,19 @@
             <div class="alert alert-primary col-md-6" role="alert">
              <center>Login FORM</center>
             </div>
-            <center><asp:Label ID="Label1" runat="server" Width="400px"></asp:Label></center>
                <div class="form-row">
               <div class="form-group col-md-6">
                 <label>Email</label>
                 <asp:TextBox class="form-control" ID="email"  runat="server" TextMode="Email"></asp:TextBox>
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" runat="server" ErrorMessage="Email is Required !" ControlToValidate="email" CssClass="text-danger"></asp:RequiredFieldValidator>
               </div>
             </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label>Password</label>
                   <asp:TextBox class="form-control" ID="psw" runat="server" TextMode="Password"></asp:TextBox>
+                  <asp:RequiredFieldValidator ID="RequiredFieldValidatorPassword" runat="server" ErrorMessage="Password is Required !" ControlToValidate="psw" CssClass="text-danger"></asp:RequiredFieldValidator>
+              
                 </div>
               </div>
               <asp:Button ID="login" class="btn btn-primary btn-lg btn-block col-md-6" runat="server" Text="Login"  />           

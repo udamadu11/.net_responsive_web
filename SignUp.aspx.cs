@@ -29,6 +29,7 @@ public partial class SignUp : System.Web.UI.Page
                     cmd.ExecuteNonQuery();
                     Label1.Text = "Registration Successfully";
                     Label1.ForeColor = Color.Green;
+                    Response.Redirect("~/Login.aspx");
                 }
             }
             else
